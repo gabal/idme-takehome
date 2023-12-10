@@ -42,11 +42,15 @@ pnpm generate
 ## Possible improvements
 - Increase unit test coverage
 - Add Cypress tests (at least for responsive design)
-- Ask if we can have the categories colors as a separate service or if we should expand the constant with categories
 - Improve responsive padding
 - Implement Options menu or hide the column
-- Ask if the first empty column is required or we can replace with just a special padding for first column
 - Create/Implement designs for loading and error pages
-- Ask about the reliability of the description HTML content
+
+
+## Questions
+- Can we have the categories colors as a separate service or should we expand the constant with categories
+- Is the first empty column required (based on designs, probabloy for future multiple selection) or can we replace it with just a special padding for first column
+- Can we rely in the HTMl content show in description
+
 
 
