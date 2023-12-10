@@ -1,0 +1,92 @@
+.responsive-table {
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background: var(--general-background-color);
+    border-spacing: 0;
+}
+.responsive-table td{
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    vertical-align: top;
+}
+.responsive-table tbody tr {
+    height: 130px;
+}
+
+.responsive-table td,
+.responsive-table th {
+    padding: 0px 12px;
+}
+.responsive-table td.highlight,
+.responsive-table td.primary-content {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+.responsive-table th{
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: left;
+    height: 48px;
+}
+
+@media (max-width: 768px) {
+    .responsive-table td.primary-content {
+        font-size: 18px;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+    }
+    .responsive-table {
+        border: none;
+    }
+    .responsive-table thead {
+        display: none;
+    }
+    .responsive-table tr, 
+    .responsive-table td {
+        padding: 0;
+    }
+    .responsive-table td {
+        display: block;
+    }
+    .responsive-table tr {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 10px;
+        border: 1px solid var(--card-border-color);
+        background: #FFF;
+        margin-bottom: 9px;
+        padding: 16px 24px;
+        position: relative;
+    }
+    .responsive-table tbody tr {
+        height: auto;
+    }
+    .responsive-table td:before {
+        content: attr(data-name);
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .responsive-table td[data-name] {
+        font-size: 16px;
+        margin-top: 26px;
+    }
+    .responsive-table .secondary-content {
+        margin-top: 10px;
+    }
+    .responsive-table  .mobile-hidden {
+        display: none;
+    }
+}
+

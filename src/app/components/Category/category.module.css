@@ -1,0 +1,15 @@
+.category {
+    text-align: center;
+    width: 100%;
+}
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 3px 12px;
+    align-items: center;
+}
+
+
+   

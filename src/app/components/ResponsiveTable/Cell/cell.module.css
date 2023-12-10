@@ -1,0 +1,11 @@
+.cell {
+    min-height: 69px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .cell {
+        min-height: 0;
+        display: block;
+    }
+}
